@@ -33,7 +33,7 @@ else if($counter > 2)
 }
 ?>
 
-//HTML
+
 <html>
 <head>
 <title>Guess A Number</title>
@@ -52,7 +52,7 @@ if ($guess != false)
 // If you used more than 2+Update atttempt, giving you 3 attempts (Little error if you complete it on 3rd try)
     if ($counter > 2)
     {
-        print "OUT OF ATTEMPTS <br>";
+        print "WRONG, OUT OF ATTEMPTS <br>";
     }
 
 //Correct guess
@@ -80,7 +80,7 @@ if ($guess != false)
 
 ?>
 
-//Form for input and looks
+<!-- Right or Wroong -->
 <?php if($guess != $rand && $counter < 3): ?>
 <form action = "" method = "post">
     
@@ -90,7 +90,7 @@ if ($guess != false)
     
 </form>
 
-// if you get it Correct or Fail
+
 <?php else: ?>
 <a href="GuessANumber.php">Click Here to Restart</a>
 <?php endif; ?>
