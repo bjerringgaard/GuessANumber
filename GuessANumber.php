@@ -50,7 +50,7 @@ if ($guess != false)
     print "The number you input was $guess <br>";
 
 // If you used more than 2+Update atttempt, giving you 3 attempts (Little error if you complete it on 3rd try)
-    if ($counter > 2)
+    if ($counter > 2 && $guess != $rand)
     {
         print "WRONG, OUT OF ATTEMPTS <br>";
     }
